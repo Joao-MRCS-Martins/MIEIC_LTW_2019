@@ -5,55 +5,76 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <form action="form.php" method="get" >
-           <legend>Personal Data:</legend>
-           <label>Name:
-               <input type="text" name="name">
-           </label>
+        <form action="save.php" method="post">
             <fieldset>
-                <label>
-                    <input type="radio" name="age" value="&lt;18">&lt;18
+
+                <legend>Personal Data:</legend>
+                <label>Name:
+                    <input type="text" name="name">
                 </label>
-                    <input type="radio" name="age" value="19-35">19-35
-                <label>
-                    <input type="radio" name="age" value="36-48">36-48
+                 <fieldset>
+                     <legend>Age:</legend>
+                     <label>
+                         <input type="radio" name="age" value="&lt;18">&lt;18
+                     </label>
+                         <input type="radio" name="age" value="19-35">19-35
+                     <label>
+                         <input type="radio" name="age" value="36-48">36-48
+                     </label>
+                     <label>
+                         <input type="radio" name="age" value="&gt;49">&gt;49
+                     </label>
+                 </fieldset>
+                 <label>Profession:
+                    <input type="text" name="profession">
+                 </label>
+                 <label>Country:
+                     <select name="country">
+                         <optgroup label="Europe">
+                             <option value="Portugal">Tugaland</option>
+                         </optgroup>
+                         <optgroup label="North America">
+                             <option value="USA">'Murica</option>
+                         </optgroup>
+                         <optgroup label="South America">
+                             <option value="Brazil">HUEHUEHUE</option>
+                         </optgroup>
+                         <optgroup label="Africa">
+                             <option value="Wakanda">Wakanda 4eva!</option>
+                         </optgroup>
+                         <optgroup label="Asia">
+                             <option value="China">(Xi)na</option>
+                         </optgroup>
+                         <optgroup label="Oceania">
+                             <option value="Australia">Oy,M8!</option>
+                         </optgroup>
+                     </select>
                 </label>
-                <label>
-                    <input type="radio" name="age" value="&gt;49">&gt;49
+                <fieldset>
+                    <legend>Interests:</legend>
+                    <label>Books
+                        <input type="checkbox" name="interests" value="books">
+                    </label>
+                    <label>Music
+                        <input type="checkbox" name="interests" value="music">
+                    </label>
+                    <label>Travel
+                        <input type="checkbox" name="interests" value="travel">
+                    </label>
+                    <label>Games
+                        <input type="checkbox" name="interests" value="games">
+                    </label>
+                    <label>Movies & TV shows
+                        <input type="checkbox" name="interests" value="movies&shows">
+                    </label>
+                </fieldset>
+                <label>How did you find about the site?:
+                    <textarea name="explanation" rows="5" cols="50">Write here.</textarea>
+                </label>
+                <label>Submit:
+                    <input type="submit" value="Send">
                 </label>
             </fieldset>
-            </label>
-            <label>Profession:
-               <input type="text"name="profession">
-            </label>
-            <label>Country:
-                <select name="country">
-                    <optgroup label="Europe">
-                        <option value="Portugal">Tugaland</option>
-                    </optgroup>
-                    <optgroup label="North America">
-                        <option value="USA">'Murica</option>
-                    </optgroup>
-                    <optgroup label="South America">
-                        <option value="Brazil">HUEHUEHUE</option>
-                    </optgroup>
-                    <optgroup label="Africa">
-                        <option value="Wakanda">Wakanda 4eva!</option>
-                    </optgroup>
-                    <optgroup label="Asia">
-                        <option value="China">(Xi)na</option>
-                    </optgroup>
-                    <optgroup label="Oceania">
-                        <option value="Australia">Oy,M8!</option>
-                    </optgroup>
-                </select>
-           </label>
-           <fieldset>
-               <legend>Interests:
-
-               </legend>
-           </fieldset>
         </form>
     </body>
-
 </html>
