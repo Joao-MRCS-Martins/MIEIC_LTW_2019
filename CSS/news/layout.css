@@ -1,0 +1,61 @@
+
+html {
+    background-color: #EDEFF0;
+}
+
+body {
+    width: 60em;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header"
+        "menu sidebar"
+        "news sidebar"
+        "footer sidebar"; 
+}
+
+#menu {
+    grid-area: menu;
+}
+
+#related {
+    grid-area: sidebar;
+}
+
+#news {
+    grid-area: news;
+}
+
+body > footer {
+    grid-area: footer;
+}
+
+body > header {
+    grid-area: header;
+    position: relative;
+}
+
+#signup {
+    position: absolute;
+    right:1em;
+    bottom:1.5em;
+}
+
+#menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#menu ul li {
+    flex-grow: 1;
+}
+
+#news article footer .author {
+    float: left;
+}
+
+#news article footer {
+    text-align: right;
+}

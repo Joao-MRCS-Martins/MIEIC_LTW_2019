@@ -9,43 +9,28 @@ body {
     margin-right: 10.25em;
 }
 
-#news img {
-    width: 100%;
+#signup a {
+    font-size: 0.8em;
+    padding: 0 1em;
 }
 
-p {
-    font-family: 'Georgia';
-    text-align: justify;
-    padding: 0 1em ;
-    font-size: 0.9em;
-    font-weight: 599;
-}
-
-#news p, nav a {
-    color: #2A2F33;
-}
-
-#news > article > p:first-of-type:first-letter {
-    text-transform: uppercase;
-    font-size: 2em;
-    font-weight: 400;
-}
-
-
-nav a {
-    text-align: center;
+#signup a:first-child {
+    border-right: 1px solid white;
+    padding-left: 0;
 }
 
 body > header {
+    margin-top: 0px;
     background-color: #046dd5;
-    padding: 1.8em 0 1.5em 1.4em;
-    font-size: 0.7em;
-    font-weight: 600;
-    line-height: 80%;
+    padding: 1.5em 1em;
+    font-size: 0.8em;
+}
+
+body > header > * {
+    margin:0;
 }
 
 body > header h2 {
-    padding: 0em;
     font-size: 1.1em;
 }
 
@@ -54,24 +39,28 @@ body > header  div {
     font-size: 1.2em;
 }
 
-body > header >div>a:first-child::after {
-    content: " |  ";
-}
-
-#menu {
-    padding-top: -1.5em;
-}
-
 nav input, nav label {
     display: none;
 }
-nav li {
+
+nav ul {
+    list-style:none;
+    padding-left: 0;
     text-align: center;
+    margin:0;
+}
+nav > ul >li {
+    border-top: 4px solid;
+    display: block;
     padding: 1em;
+    background-color: white;
+}
+
+nav >ul > li > a{
+    color:black;
+    text-decoration: none;
+    display: block;
     font-weight: 600;
-    border-top-style: solid;
-    border-top-width: 0.4em;
-    margin: -1em 0em 1em -2.5em;
 }
 
 nav li:nth-child(1) {
@@ -98,7 +87,7 @@ nav li:nth-child(6) {
     border-top-color: #E84C8B;
 }
 
-#news > article > footer:before{
+#news footer span:first-child:before{
     color: white;
     content: "By ";
 }
@@ -118,8 +107,9 @@ nav li:nth-child(6) {
     font-weight: 500;
     padding:1em;
 }
-aside, body > footer {
+body > footer {
     background-color: #2A2F33;
+    color:white;
     padding: 1em  ;
 }
 
@@ -129,8 +119,47 @@ body > footer {
     margin: 1em 0em;
 }
 
-aside p {
-    padding: 0em;
+#related {
+    font-size:0.9em;
+    background-color: #2A2F33;
+    color: white;
+    padding: 1em;
+}
+
+#related article a {
+    color: white;
+    text-decoration: none;
+}
+
+#related article p {
+    font-family: 'georgia',Times,serif;
+    font-size: 1.2em;
+}
+
+#news img {
+    width: 100%;
+}
+
+#news p, nav a {
+    color: #2A2F33;
+}
+
+#news > article > p:first-of-type:first-letter {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+#news article {
+    margin-right: 1em;
+    margin-top: 1em;
+    background-color: white;
+}
+#news article p{
+    margin-left: 1em;
+    position: relative;
+    margin-bottom: 1em;
+    font-family: 'georgia';
 }
 
 article header a {
@@ -138,6 +167,6 @@ article header a {
     position: absolute;
     max-width: 12em;
     margin-left: 1em;
-    margin-top: 2em; 
+    margin-top: 1em; 
     text-shadow:4px 4px 6px #2A2F33; 
 }

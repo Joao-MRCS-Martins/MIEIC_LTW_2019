@@ -1,0 +1,32 @@
+@media (max-width: 60em) {
+    body {
+        display: block;
+    }
+
+    #related {
+        display: none;
+    }
+
+    #news {
+        margin-right:0em;
+    }
+}
+
+@media (max-width: 30em) {
+    body {
+        display: block;
+    }
+
+    #related{
+        display:none;
+    }
+    
+    #news {
+        margin-right:0em;
+    }
+
+    header h2 {
+        display:none;
+    }
+
+}
