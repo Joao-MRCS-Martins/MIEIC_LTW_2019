@@ -35,12 +35,24 @@ body > footer {
 body > header {
     grid-area: header;
     position: relative;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "title title"
+        "subtitle signup";
+}
+
+body > header > h1 {
+    grid-area: title;
+}
+
+body > header > h2 {
+    grid-area: subtitle;
 }
 
 #signup {
-    position: absolute;
-    right:1em;
-    bottom:1.5em;
+    grid-area: signup;
 }
 
 #menu ul {

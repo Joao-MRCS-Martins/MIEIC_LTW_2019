@@ -1,6 +1,7 @@
 @media (max-width: 60em) {
     body {
         display: block;
+
     }
 
     #related {
@@ -13,20 +14,93 @@
 }
 
 @media (max-width: 30em) {
+    
     body {
+        background-color:white;
         display: block;
     }
 
     #related{
         display:none;
     }
+
+    body > header {
+        display: block;
+    }
     
     #news {
         margin-right:0em;
     }
 
-    header h2 {
+    body > header > h2 {
         display:none;
+    }
+
+    #menu .hamburger{
+        display: block;
+        padding: 1em;
+        background-color: #2A2F33;
+        color: white;
+    }
+
+    #hamburger + label:before {
+        content: "\2630";
+    }
+
+    #hamburger:checked  + label:before{
+        content: "\2715";
+    }    
+
+    #hamburger:checked + #menu > ul>li{
+        display: block;
+        padding: 1em;
+    }
+
+    #hamburger:checked + #menu > ul>li>a {
+        text-align: left;
+    }
+
+    #menu > ul {
+        position: relative;
+        /* display: none; */
+        display: inline-block;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #menu > ul > li > a {
+        text-align: left;
+        font-weight: 400;
+    }
+    
+    #menu > ul > li {
+        background-color: #EDEFF0;
+        border-left: 4px solid black; 
+        border-top-style: none;
+    }
+
+    #menu > ul > li:nth-child(1) {
+        border-left-color:#E1493E;
+    }
+    
+    #menu > ul > li:nth-child(2) {
+        border-left-color: #8ABA56;
+    }
+    
+    #menu > ul > li:nth-child(3) {
+        border-left-color: #5B4282;
+    }
+    
+    #menu > ul > li:nth-child(4) {
+        border-left-color: #FF8932;
+    }
+    
+    #menu > ul > li:nth-child(5) {
+        border-left-color: #19B6E9;
+    }
+    
+    #menu > ul > li:nth-child(6) {
+        border-left-color: #E84C8B;
     }
 
 }
