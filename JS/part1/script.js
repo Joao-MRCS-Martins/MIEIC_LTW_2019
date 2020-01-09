@@ -19,10 +19,8 @@ form.addEventListener('submit', function (event) {
   updateTotal()
 
   let inputQnt = row.querySelector('td:nth-child(2) input')
-  inputQnt.addEventListener('change', function() {
-    updateTotal()
-  })
-  
+  inputQnt.addEventListener('change', updateTotal)
+
   let remBtn = row.querySelector('input[type=button]')
   remBtn.addEventListener('click', function () {
     this.parentNode.parentNode.remove()
