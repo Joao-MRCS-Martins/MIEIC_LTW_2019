@@ -1,0 +1,58 @@
+2017 - 2
+
+1. 3
+2. 4
+3. 2
+4. 3
+5. 1
+6. 3
+7. 2
+8. 4
+
+2017 - 1
+
+1. 2
+2. 3
+3. 4
+4. 3
+5. 2
+6. 4
+7. 3
+8. 1
+
+2016 - 2
+
+1. 2
+2. 3
+3. 3
+4. 3
+5. 0,1,2
+7. 4.
+
+2016 - 1
+
+1. 4
+2. 1
+3. 3
+4. 3
+5. 1
+7. Selected job nodes, children of person nodes, which itself is descendant of the context node
+
+2015 - 2
+
+1. 2
+2. 4
+3. 1
+4. 3
+5. 1,2,3,4
+7. The side effects of multiple requests of idempotent methods are the same as a single request.
+In this case, GET and HEAD are safe, which means they have no side effects at all.
+
+2015 - 1
+
+1. 1
+2. 4
+3. 3
+4. 3
+5. 10 or error ?
+7. No state is stored on the server.

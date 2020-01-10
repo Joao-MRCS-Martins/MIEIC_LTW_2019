@@ -1,0 +1,32 @@
+2018
+
+29 - recipes/recipe/name/text()
+30 - recipes/recipe[@difficulty='medium']/name/text()
+31 - recipes/recipe[description]/@difficulty
+32 - recipes/recipe[count(ingredients/ingredient)>3]/name/text()
+
+2017 - 2
+
+a - authors/author/book/text()
+b - authors/author/book[number(@year)>1900]/text()
+c - authors/author[@country='England']/book/@year
+d - authors/author[book/@type='Novel']/@name
+
+2017 - 1
+
+a - authors/author/@name
+b - authors/author/book[@type='Novel']/text()
+c - authors/author[count(book)>1]/@name
+d - authors/author[book/text()='Ensaio sobre a Cegueira']/@country
+
+2014 - 1
+
+/Produtos/Stock/produto[number(quantidade)>1000]/@nome
+
+2013 - 2
+
+/project/task[count(assigned) > 2]/@name/text()
+
+2013 - 1
+
+/list/product[number(part/@count)>5]/name/text()
