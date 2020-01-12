@@ -4,37 +4,3 @@
 30 - recipes/recipe[@difficulty='medium']/name/text()
 31 - recipes/recipe[description]/@difficulty
 32 - recipes/recipe[count(ingredients/ingredient)>3]/name/text()
-
-2013 - 2
-
-/project/task[count(assigned) > 2]/@name/text()
-
-2013 - 1
-
-/list/product[number(part/@count)>5]/name/text()
-
-<?xml version="1.0" encoding="UTF-8"?>
-<list>
-  <product>
-    <name>A</name>
-    <parts>
-      <part count="3">X3</part>
-      <part count="1">Y2</part>
-      <part count="2">Z6</part>
-    </parts>
-  </product>
-  <product>
-    <name>B</name>
-    <parts>
-      <part count="1">G3</part>
-      <part count="2">Y6</part>
-    </parts>
-  </product>
-  <product>
-    <name>C</name>
-    <parts>
-      <part count="6">K9</part>
-      <part count="3">Y6</part>
-    </parts>
-  </product>
-</list>

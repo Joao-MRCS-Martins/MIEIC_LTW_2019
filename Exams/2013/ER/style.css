@@ -1,0 +1,17 @@
+div {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  background-color: cyan;
+}
+
+#a1 {float: left;}
+#b1 {float: left;}
+#c1 {float: left;clear: left;}
+#d1 {float: left;}
+
+body>:first-child, .b2+div { background-color: yellow;}
+div#a1, .c2 {background-color: green;}
+#a, #c1.c2 {background-color: blue;}
+body>#d1, .x+div {background-color: red;}
